@@ -1,0 +1,18 @@
+{
+  "schema_version": "demo-v1",
+  "families": {
+    "SyntheticQuote": {
+      "primary_key": ["symbol"],
+      "state_type": "current_state",
+      "required_fields": ["symbol", "bid", "ask", "event_time"],
+      "numeric_fields": ["bid", "ask"]
+    },
+    "SyntheticTrade": {
+      "primary_key": ["symbol", "trade_id"],
+      "state_type": "append_only_event",
+      "required_fields": ["symbol", "trade_id", "price", "size", "event_time"],
+      "numeric_fields": ["price", "size"]
+    }
+  }
+}
+
