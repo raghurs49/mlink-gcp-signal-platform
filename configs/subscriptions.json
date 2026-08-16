@@ -1,0 +1,19 @@
+{
+  "manifest_version": "demo-2026-08-16",
+  "api_key_env": "MLINK_API_KEY",
+  "heartbeat_timeout_seconds": 2.0,
+  "max_reconnects": 3,
+  "subscriptions": [
+    {
+      "family": "SyntheticQuote",
+      "symbols": ["DEMO"],
+      "fields": ["symbol", "bid", "ask", "event_time"]
+    },
+    {
+      "family": "SyntheticTrade",
+      "symbols": ["DEMO"],
+      "fields": ["symbol", "trade_id", "price", "size", "event_time"]
+    }
+  ]
+}
+
