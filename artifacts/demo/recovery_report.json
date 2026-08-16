@@ -1,0 +1,76 @@
+{
+  "checkpoint_state": "COMPLETE",
+  "evidence": {
+    "raw_chain_valid": true,
+    "raw_records": 9,
+    "signal_chain_valid": true,
+    "signal_records": 4
+  },
+  "manifest_version": "demo-2026-08-16",
+  "metrics": {
+    "counters": {
+      "authenticated_connections": 2,
+      "checkpoint_active": 2,
+      "checkpoint_begin": 2,
+      "checkpoint_complete": 2,
+      "data_frames": 9,
+      "disconnects": 1,
+      "heartbeats": 4,
+      "reconnects": 1,
+      "successful_subscriptions": 2
+    },
+    "p95_ms": {
+      "authentication": 0.175,
+      "processing": 0.399
+    }
+  },
+  "recovery": [
+    {
+      "action": "reconnect_and_resubscribe",
+      "attempt": 1,
+      "status": "resubscribed"
+    }
+  ],
+  "signals": [
+    {
+      "event_time": "2026-08-16T05:17:10.709977+00:00",
+      "explanation": "Synthetic quote spread is 19.98 bps; lower values indicate a tighter synthetic market. This is not trading advice.",
+      "signal_id": "860a31824614f81a",
+      "signal_type": "spread_quality",
+      "source_sequence": 8,
+      "strategy_version": "synthetic-spread-v1",
+      "symbol": "DEMO",
+      "value": 19.98
+    },
+    {
+      "event_time": "2026-08-16T05:17:10.732155+00:00",
+      "explanation": "Synthetic quote spread is 19.98 bps; lower values indicate a tighter synthetic market. This is not trading advice.",
+      "signal_id": "5a202629ec842467",
+      "signal_type": "spread_quality",
+      "source_sequence": 8,
+      "strategy_version": "synthetic-spread-v1",
+      "symbol": "DEMO",
+      "value": 19.98
+    },
+    {
+      "event_time": "2026-08-16T05:17:10.742586+00:00",
+      "explanation": "Synthetic quote spread is 19.97 bps; lower values indicate a tighter synthetic market. This is not trading advice.",
+      "signal_id": "353ece77adf3803d",
+      "signal_type": "spread_quality",
+      "source_sequence": 11,
+      "strategy_version": "synthetic-spread-v1",
+      "symbol": "DEMO",
+      "value": 19.97
+    },
+    {
+      "event_time": "2026-08-16T05:17:10.753662+00:00",
+      "explanation": "Synthetic quote spread is 19.96 bps; lower values indicate a tighter synthetic market. This is not trading advice.",
+      "signal_id": "381ada1b2e3a3b3d",
+      "signal_type": "spread_quality",
+      "source_sequence": 14,
+      "strategy_version": "synthetic-spread-v1",
+      "symbol": "DEMO",
+      "value": 19.9601
+    }
+  ]
+}
